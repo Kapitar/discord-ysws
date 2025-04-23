@@ -1,103 +1,115 @@
+import Button from "@/components/Button";
+import Card from "@/components/Card";
 import Image from "next/image";
+import { FaCheckCircle } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <div className="bg-gradient-to-br from-blue-800 to-indigo-500">
+        <div className="container mx-auto h-screen flex items-center">
+          <div className="grid grid-cols-2 w-full">
+            <div className="self-center">
+              <Image
+                src={"/kitten.png"}
+                alt=""
+                width={300}
+                height={300}
+                className="mb-4"
+              />
+              <p className="text-3xl text-white font-medium mb-5">
+                You ship a discord bot, we ship{" "}
+                <span className="text-indigo-200">Discord Nitro</span> or{" "}
+                <span className="text-indigo-200">cat ears</span>!
+              </p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+              <div className="flex gap-x-4">
+                <Button href="" color="blue">
+                  Submit PR
+                </Button>
+                <Button href="" color="blue" invert>
+                  Submit Demo
+                </Button>
+              </div>
+            </div>
+            <div className="flex justify-end">
+              <Image
+                src={"/discord-logo.png"}
+                alt=""
+                width={450}
+                height={450}
+              />
+            </div>
+          </div>
+          <div className="absolute left-0 bottom-12 w-full text-center">
+            <a href="#learn-more">
+              <h2 className="text-white text-xl mb-2">Learn more</h2>
+              <FaArrowDown className="mx-auto text-white text-xl animate-bounce" />
+            </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div id="learn-more" className="container mx-auto pt-12">
+          <h1 className="text-5xl font-bold text-center text-white mb-12">
+            How does it work?
+          </h1>
+          <div className="grid grid-cols-2 gap-5">
+            <Card title="Learn how to create bots!" step={1}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perferendis aliquam necessitatibus sunt exercitationem cum, non,
+              iusto dolor obcaecati excepturi in recusandae doloremque nisi
+              blanditiis ducimus. In consequuntur facilis temporibus laborum!
+            </Card>
+
+            <Card title="Start building your bot" step={2}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perferendis aliquam necessitatibus sunt exercitationem cum, non,
+              iusto dolor obcaecati excepturi in recusandae doloremque nisi
+              blanditiis ducimus. In consequuntur facilis temporibus laborum!
+            </Card>
+
+            <Card title="Submit your bot" step={3}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perferendis aliquam necessitatibus sunt exercitationem cum, non,
+              iusto dolor obcaecati excepturi in recusandae doloremque nisi
+              blanditiis ducimus. In consequuntur facilis temporibus laborum!
+            </Card>
+
+            <Card title="Receive a prize!" step={4}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perferendis aliquam necessitatibus sunt exercitationem cum, non,
+              iusto dolor obcaecati excepturi in recusandae doloremque nisi
+              blanditiis ducimus. In consequuntur facilis temporibus laborum!
+            </Card>
+          </div>
+        </div>
+        <div id="requirements" className="container mx-auto pb-32 pt-32">
+          <h1 className="text-5xl font-bold text-center text-white mb-12">
+            Requirements
+          </h1>
+
+          <div className="space-y-4 w-full bg-white p-7 rounded-2xl">
+            <div className="flex items-center space-x-4">
+              <FaCheckCircle className="text-indigo-500 w-8 h-8" />
+              <p className="text-xl text-black">
+                You need to be a high schooler and be less than 18 years old.
+              </p>
+            </div>
+            <div className="flex items-center space-x-4">
+              <FaCheckCircle className="text-indigo-500 w-8 h-8" />
+              <p className="text-xl text-black">
+                Spend at least 5 hours on developing your bot.
+              </p>
+            </div>
+            <div className="flex items-center space-x-4">
+              <FaCheckCircle className="text-indigo-500 w-8 h-8" />
+              <p className="text-xl text-black">
+                Record your time using hackatime.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
