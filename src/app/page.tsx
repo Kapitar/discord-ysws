@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import Card from "@/components/Card";
+import FAQCard from "@/components/FAQCard";
 import Image from "next/image";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa6";
@@ -83,7 +84,7 @@ export default function Home() {
             </Card>
           </div>
         </div>
-        <div id="requirements" className="container mx-auto pb-32 pt-32">
+        <div id="requirements" className="container mx-auto pt-16">
           <h1 className="text-5xl font-bold text-center text-white mb-12">
             Requirements
           </h1>
@@ -104,9 +105,44 @@ export default function Home() {
             <div className="flex items-center space-x-4">
               <FaCheckCircle className="text-indigo-500 w-8 h-8" />
               <p className="text-xl text-black">
-                Record your time using hackatime.
+                Record your time using Hackatime.
               </p>
             </div>
+          </div>
+        </div>
+        <div id="faq" className="container mx-auto pb-32 pt-16">
+          <h1 className="text-5xl font-bold text-center text-white mb-12">
+            Frequently Asked Questions
+          </h1>
+
+          <div className="grid grid-cols-2 gap-5">
+            <FAQCard title="How much time do I need to spend on my bot?">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              odio necessitatibus placeat? Ipsum dignissimos officiis harum
+              consequuntur, saepe mollitia et nisi quisquam error ullam, optio
+              dolorem ducimus voluptates praesentium atque.
+            </FAQCard>
+
+            <FAQCard title="How much time do I need to spend on my bot?">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              odio necessitatibus placeat? Ipsum dignissimos officiis harum
+              consequuntur, saepe mollitia et nisi quisquam error ullam, optio
+              dolorem ducimus voluptates praesentium atque.
+            </FAQCard>
+
+            <FAQCard title="How much time do I need to spend on my bot?">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              odio necessitatibus placeat? Ipsum dignissimos officiis harum
+              consequuntur, saepe mollitia et nisi quisquam error ullam, optio
+              dolorem ducimus voluptates praesentium atque.
+            </FAQCard>
+
+            <FAQCard title="How much time do I need to spend on my bot?">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              odio necessitatibus placeat? Ipsum dignissimos officiis harum
+              consequuntur, saepe mollitia et nisi quisquam error ullam, optio
+              dolorem ducimus voluptates praesentium atque.
+            </FAQCard>
           </div>
         </div>
       </div>

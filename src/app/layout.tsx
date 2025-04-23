@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import discordFont from "@/fonts/discordFont";
 import Flag from "@/components/Flag";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Discord YSWS",
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html className="scroll-smooth" lang="en">
       <body className={`${discordFont.className}`}>
         <Flag />
+        <Navbar />
         {children}
       </body>
     </html>

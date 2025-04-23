@@ -11,7 +11,7 @@ export default function Card({ title, step, children, ...rest }: CardProps) {
         Step {step}
       </h1>
       <h2 className="text-3xl font-medium mb-2">{title}</h2>
-      <p className="text-lg">
+      <p className="text-lg text-indigo-800">
         {children}
       </p>
     </div>
