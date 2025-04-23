@@ -3,6 +3,7 @@ import "./globals.css";
 import discordFont from "@/fonts/discordFont";
 import Flag from "@/components/Flag";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Discord YSWS",
@@ -20,6 +21,7 @@ export default function RootLayout({
         <Flag />
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

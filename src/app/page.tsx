@@ -50,7 +50,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div id="learn-more" className="container mx-auto pt-12">
+        <div id="learn-more" className="container mx-auto pt-16">
           <h1 className="text-5xl font-bold text-center text-white mb-12">
             How does it work?
           </h1>
@@ -110,7 +110,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="faq" className="container mx-auto pb-32 pt-16">
+        <div id="faq" className="container mx-auto pb-16 pt-16">
           <h1 className="text-5xl font-bold text-center text-white mb-12">
             Frequently Asked Questions
           </h1>
