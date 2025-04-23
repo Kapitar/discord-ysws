@@ -4,7 +4,7 @@ interface CardProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
 }
 
-export default function Card({ title, step, children, ...rest }: CardProps) {
+export default function Card({ title, step, children }: CardProps) {
   return (
     <div className="w-full bg-white px-7 py-8 rounded-xl">
       <h1 className="text-4xl font-bold text-center mb-5 text-indigo-500">
