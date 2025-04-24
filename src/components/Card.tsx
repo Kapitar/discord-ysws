@@ -6,12 +6,12 @@ interface CardProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 export default function Card({ title, step, children }: CardProps) {
   return (
-    <div className="w-full bg-white px-7 py-8 rounded-xl">
-      <h1 className="text-4xl font-bold text-center mb-5 text-indigo-500">
+    <div className="w-full bg-white md:px-7 px-5 py-8 rounded-xl">
+      <h1 className="md:text-4xl text-2xl font-bold text-center mb-5 text-indigo-500">
         Step {step}
       </h1>
-      <h2 className="text-3xl font-medium mb-2">{title}</h2>
-      <p className="text-lg text-indigo-800">
+      <h2 className="md:text-3xl text-xl font-medium mb-2">{title}</h2>
+      <p className="md:text-lg text-md text-indigo-800">
         {children}
       </p>
     </div>
