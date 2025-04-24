@@ -7,19 +7,21 @@ export default function Flag() {
       href="https://hackclub.com/"
       target="_blank"
       aria-label="Hack Club's homepage"
-      style={{ position: "absolute", top: 4, left: 0, zIndex: 2 }}
+      style={{ position: "absolute", left: 0, top:0, zIndex: 2 }}
     >
-      <Image
-        src="https://assets.hackclub.com/flag-orpheus-left.svg"
-        alt="Hack Club flag"
-        style={{
-          transformOrigin: "0% 0%",
-          transition: "transform 0.1s",
-        }}
-        className="flag"
-        width={128}
-        height={128}
-      />
+      <div className="relative w-24 h-24 md:w-32 md:h-28">
+        <Image
+          src="https://assets.hackclub.com/flag-orpheus-left.svg"
+          alt="Hack Club flag"
+          fill
+          style={{
+            objectFit: "contain",
+            transformOrigin: "0% 0%",
+            transition: "transform 0.1s",
+          }}
+          className="flag"
+        />
+      </div>
     </Link>
   );
 }
