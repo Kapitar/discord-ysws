@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <div className="bg-gradient-to-br from-blue-800 to-indigo-500">
-        <div className="container mx-auto h-screen flex items-center md:p-0 p-5 md:pt-">
+        <div className="container mx-auto h-screen flex items-center md:p-0 p-5">
           <div className="lg:grid lg:grid-cols-2 w-full text-center">
             <div className="self-center">
               <Image
@@ -51,10 +51,10 @@ export default function Home() {
           </div>
         </div>
         <div id="learn-more" className="container mx-auto pt-16">
-          <h1 className="text-5xl font-bold text-center text-white mb-12">
+          <h1 className="md:text-5xl text-4xl font-bold text-center text-white mb-12 md:px-0 px-5">
             How does it work?
           </h1>
-          <div className="grid grid-cols-2 gap-5 px-5">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-5 md:px-0 px-5">
             <Card title="Learn how to create bots!" step={1}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Perferendis aliquam necessitatibus sunt exercitationem cum, non,
@@ -85,7 +85,7 @@ export default function Home() {
           </div>
         </div>
         <div id="requirements" className="container mx-auto pt-16">
-          <h1 className="text-5xl font-bold text-center text-white mb-12">
+          <h1 className="md:text-5xl text-4xl font-bold text-center text-white mb-12 md:px-0 px-5">
             Requirements
           </h1>
 
@@ -113,11 +113,11 @@ export default function Home() {
           </div>
         </div>
         <div id="faq" className="container mx-auto pb-16 pt-16">
-          <h1 className="text-5xl font-bold text-center text-white mb-12">
+          <h1 className="md:text-5xl text-4xl font-bold text-center text-white mb-12 md:px-0 px-5">
             Frequently Asked Questions
           </h1>
 
-          <div className="grid grid-cols-2 gap-5 px-5">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-5 px-5">
             <FAQCard title="How much time do I need to spend on my bot?">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
               odio necessitatibus placeat? Ipsum dignissimos officiis harum
